@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainForm" alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FileManagerFX.mainView.Controller">
+    <HBox>
+        <Button fx:id="backButton" text="Назад" HBox.hgrow="ALWAYS" onAction="#backButtonAction" />
+        <TextField fx:id="pathField" editable="false" HBox.hgrow="ALWAYS" />
+    </HBox>
+    <TableView fx:id="filesViewTable" VBox.vgrow="ALWAYS" />
+    <HBox spacing="5">
+        <Button maxWidth="Infinity" focusTraversable="false" text="Скачать" HBox.hgrow="ALWAYS" onAction="#buttonDownloadAction" />
+        <Button maxWidth="Infinity" focusTraversable="false" text="Загрузить" HBox.hgrow="ALWAYS" onAction="#buttonUploadAction"/>
+        <Button maxWidth="Infinity" focusTraversable="false" text="Удалить" HBox.hgrow="ALWAYS" onAction="#buttonDeleteAction"/>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+    </HBox>
+</VBox>
